@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NeuroDash</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="psp">
+        <h1>🎮 NeuroDash</h1>
+        <p>Mini AI Dashboard</p>
 
+        <form method="POST">
+            <textarea name="text" placeholder="Enter text..." required></textarea>
+            <button>Analyze</button>
+        </form>
+
+        {% if result %}
+            <div class="result">{{ result }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
